@@ -1,0 +1,81 @@
+@import "../../app.scss";
+
+.hero{
+    height: calc(100vh - 75px);
+    background: linear-gradient(180deg, rgba(24,5,27,1) 0%, rgba(60,6,69,1) 50%, rgba(24,5,27,1) 100%);
+    overflow: hidden;
+    position: relative;
+
+    .wrapper{
+        max-width: 1366px;
+        height: 100%;
+        margin: auto;
+        .text-container{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+            @include tablet {
+                height: 50%;
+                width: 100%;
+                gap: 20px;
+                align-items: center;
+                text-align: center;
+              }
+            h2{
+                font-size: 35px;
+                letter-spacing: 3px;
+                color: #AD88C6;
+            }
+            h1{
+                font-size: 70px;
+                @include tablet {
+                    font-size: 36px;
+                  }
+            }
+            img{
+                width: 50px;
+            }
+            .buttons{
+                position: relative;
+                z-index: 3;
+                button{
+                    padding: 10px 20px;
+                    border: 1px solid white;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: white;
+                    margin-right: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+    .image-container{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        @include tablet {
+            height: 60%;
+            width: unset;
+            top: unset;
+            bottom: 0;
+          }
+        img{
+            @include tablet {
+                width: 650px;
+              }
+        }
+    }
+    .rolling-text{
+        position: absolute;
+        font-size: 300px;
+        bottom: -100px;
+        white-space: nowrap;
+        color: rgba(255, 255, 255, 0.264);
+    }
+}
+

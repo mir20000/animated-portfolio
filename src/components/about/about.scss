@@ -1,0 +1,100 @@
+@import "../../app.scss";
+.about-me{
+    position: relative;
+    .content-wrapper{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        display: grid;
+        place-content: center;
+    }
+    .content-card{
+        display: grid;
+        color: black;
+        grid-template-columns: 20rem auto;
+        height: 20rem;
+        width: 65rem;
+        background-color: white;
+        border-radius:10rem;
+        box-shadow: rgb(38 1 44) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        @include tablet {
+            margin: 0 1%;
+            width: 98%;
+            height: fit-content;
+            grid-template-columns: auto;
+          }
+        .card-col{
+            position: relative;
+            width: 100%;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            .overlay-intro{
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: 0.5rem;
+                height: 19.5rem;
+                width: 100%;
+                border-radius: 10rem;
+                display: grid;
+                place-content: center;
+                h1{
+                    padding-right:6rem;
+                    font-size: 3rem;
+                    @include tablet {
+                        padding-right:0;        
+                      }
+                }
+            }
+            .display-img{
+                height: 18rem;
+                width: 18rem;
+                border-radius: 10rem;
+                box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+            }
+            .align-row{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                height: 100%;
+                @include tablet {
+                    align-items:center;
+                    text-align: center;       
+                  }
+                p{
+                    margin-right: 2rem;
+                    &:first-letter {
+                        padding: 0 .3rem;
+                        margin: 0 .3rem 0 0;
+                        border: 2px solid;
+                        border-radius: 8px;
+                        font-family: "IBM Plex Mono", monospace;
+                      
+                        font-size: 4rem;
+                        float: left;
+                        line-height: 1; } 
+                }
+                .inline-info{
+                    margin: 1rem;
+                    list-style: none;
+                    gap: 1rem;
+                    display: inline-flex;
+                    font-weight: 600;
+                    color: #5e216a;
+                    img{
+                        height: 24px;
+                        width: 24px;
+                    }
+                    li{
+                        display: flex;
+                        align-items: center;
+                        gap:3px;
+                    }
+                }
+            }
+
+        }
+    }
+}
