@@ -18,11 +18,11 @@
     gap: 40px;
 
     @include mobile {
-        gap: 20px;
-        text-align: center;
-        align-items: center;
-        margin-top: 70px;
-      }
+      gap: 20px;
+      text-align: center;
+      align-items: center;
+      margin-top: 70px;
+    }
 
     h1 {
       font-size: 100px;
@@ -31,7 +31,6 @@
         font-size: 36px;
         line-height: 36px;
       }
-
     }
 
     span {
@@ -44,9 +43,9 @@
     position: relative;
 
     @include mobile {
-        padding: 50px;
-        width: 100%;
-      }
+      padding: 50px;
+      width: 100%;
+    }
 
     .phone-svg {
       stroke: #00ffea;
@@ -62,15 +61,15 @@
 
       input,
       textarea {
-    cursor: url('icons/text-cursor.png'), text;
+        cursor: url("/icons/text-cursor.png"), text;
         padding: 20px;
         background-color: transparent;
         border: 1px solid white;
         color: white;
         border-radius: 5px;
         @include mobile {
-            padding: 10px;
-          }
+          padding: 10px;
+        }
       }
 
       button {
@@ -79,8 +78,8 @@
         background-color: #00ffea;
         font-weight: 500;
         @include mobile {
-            padding: 10px;
-          }
+          padding: 10px;
+        }
       }
     }
   }

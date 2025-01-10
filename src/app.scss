@@ -1,48 +1,48 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: "DM Sans", sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
 }
 
-html{
-    // scroll-snap-type: y mandatory;//disable this for smooth scrolling
-    -webkit-scroll-behavior: smooth !important;
-    scroll-behavior: smooth !important;
+html {
+  // scroll-snap-type: y mandatory;//disable this for smooth scrolling
+  -webkit-scroll-behavior: smooth !important;
+  scroll-behavior: smooth !important;
 }
 
-body{
-    background-color: #18051b;
-    color: lightgrey;
-        cursor: url('icons/cursor.png'), auto;
-    a{
-        text-decoration: none;
-        color: inherit;
-        cursor: url('icons/click-cursor.png'), pointer;
-    }
-    button{
-      cursor: url('icons/click-cursor.png'), pointer;
-    }
+body {
+  background-color: #18051b;
+  color: lightgrey;
+  cursor: url("/icons/cursor.png"), auto;
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: url("/icons/click-cursor.png"), pointer;
+  }
+  button {
+    cursor: url("/icons/click-cursor.png"), pointer;
+  }
 }
 
-section{
-    height: 100vh;
-    // scroll-snap-align: center;//disable this for smooth scrolling
-    overflow: hidden;
+section {
+  height: 100vh;
+  // scroll-snap-align: center;//disable this for smooth scrolling
+  overflow: hidden;
 }
 
 @mixin mobile {
-    @media (max-width: 738px) {
-      @content;
-    }
+  @media (max-width: 738px) {
+    @content;
   }
-  @mixin tablet {
-    @media (max-width: 1024px) {
-      @content;
-    }
+}
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
   }
-  @mixin desktop {
-    @media (max-width: 1366px) {
-      @content;
-    }
+}
+@mixin desktop {
+  @media (max-width: 1366px) {
+    @content;
   }
+}
